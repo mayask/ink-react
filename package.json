@@ -2,6 +2,7 @@
   "name": "ink-react",
   "version": "0.0.1",
   "description": "React components for building responsive email templates",
+  "repository": "https://github.com/myaskevich/ink-react",
   "main": "build/app.js",
   "scripts": {
     "build": "babel js --out-dir=build",
