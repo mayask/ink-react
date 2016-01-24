@@ -2,17 +2,17 @@
 import React from 'react'
 import classnames from 'classnames'
 
-export class Button extends React.Component {
+export class Col extends React.Component {
   render() {
-    let buttonClass = classnames('button', this.props.class)
-
+    let colClass = classnames(this.props.width, "columns")
     return (
-      <table className={buttonClass}>
+      <table className={colClass}>
         <tbody>
           <tr>
             <td>
-              <a href={this.props.href}>{this.props.children}</a>
+              {this.props.children}
             </td>
+            <td className="expander"></td>
           </tr>
         </tbody>
       </table>
