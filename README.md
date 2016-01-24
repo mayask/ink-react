@@ -51,14 +51,14 @@ as well [here](http://foundation.zurb.com/emails/docs.html).
 
 #### Grid components:
 
-* [Container](/blob/master/js/components/Container.jsx)
-* [Row](/blob/master/js/components/Row.jsx)
-* [Col](/blob/master/js/components/Col.jsx)
+* [Container](/js/components/Container.jsx)
+* [Row](/js/components/Row.jsx)
+* [Col](/js/components/Col.jsx)
 
 #### Controls
 
-* [Email](/blob/master/js/components/Email.jsx)
-* [Button](/blob/master/js/components/Button.jsx)
+* [Email](/js/components/Email.jsx)
+* [Button](/js/components/Button.jsx)
 
 ## License
 MIT
