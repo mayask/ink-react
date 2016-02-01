@@ -1,9 +1,10 @@
 
 import React from 'react'
 import classnames from 'classnames'
+import { InkComponent } from './_InkComponent'
 
-export class Button extends React.Component {
-  render() {
+export class Button extends InkComponent {
+  renderInk() {
     let buttonClass = classnames('button', this.props.class)
 
     return (
@@ -11,7 +12,7 @@ export class Button extends React.Component {
         <tbody>
           <tr>
             <td>
-              <a href={this.props.href}>{this.props.children}</a>
+              <a href={this.props.href}>{this.renderChildren()}</a>
             </td>
           </tr>
         </tbody>
