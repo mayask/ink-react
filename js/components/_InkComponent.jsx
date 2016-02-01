@@ -11,7 +11,14 @@ export class InkComponent extends React.Component {
     if (this.props.center) {
       result = (
         <center>
-          {result}
+          {React.Children.map(result, (child) => {
+            if (React.isValidElement(child)) {
+              child = React.cloneElement(child, {
+                'center': this.props.center
+              })
+            }
+            return child
+          })}
         </center>
       )
     }

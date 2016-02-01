@@ -12,7 +12,7 @@ export class Button extends InkComponent {
         <tbody>
           <tr>
             <td>
-              <a href={this.props.href}>{this.renderChildren()}</a>
+              <a href={this.props.href}>{this.props.children}</a>
             </td>
           </tr>
         </tbody>
