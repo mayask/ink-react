@@ -7,7 +7,8 @@ export class Col extends InkComponent {
   renderInk() {
     let colClass = classnames(this.props.width, "columns")
     let colContentClass = classnames({
-      'center': this.props.center
+      'center': this.props.center,
+      'panel': this.props.panel
     })
     return (
       <table className={colClass}>
