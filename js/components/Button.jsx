@@ -6,16 +6,19 @@ import { InkComponent } from './_InkComponent'
 export class Button extends InkComponent {
   renderInk() {
     let buttonClass = classnames('button', this.props.class)
-
     return (
       <table className={buttonClass}>
-        <tbody>
-          <tr>
-            <td>
-              <a href={this.props.href}>{this.props.children}</a>
-            </td>
-          </tr>
-        </tbody>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <a href={this.props.href}>{this.props.children}</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
       </table>
     );
   }

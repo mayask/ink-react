@@ -5,9 +5,7 @@ import classnames from 'classnames'
 
 export class Image extends InkComponent {
   renderInk() {
-    var imgClass = classnames({
-      'center': this.props.center
-    })
+    let imgClass = classnames(this.props.class)
     return (
       <img className={imgClass} src={this.props.src} alt={this.props.alt}/>
     )
