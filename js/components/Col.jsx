@@ -5,7 +5,7 @@ import classnames from 'classnames'
 
 export class Col extends InkComponent {
   renderInk() {
-    let colClass = classnames(this.props.width, "columns")
+    let colClass = classnames(this.props.class, "columns")
     let colContentClass = classnames({
       'center': this.props.center,
       'panel': this.props.panel

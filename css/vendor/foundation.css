@@ -75,7 +75,6 @@ table, tr, td {
     background: #f3f3f3; } }
 
 table.body {
-  background: #f3f3f3;
   height: 100%;
   width: 100%; }
 
@@ -1262,3 +1261,19 @@ body.outlook p {
       display: block !important; }
   table.menu[align="center"] {
     width: auto !important; } }
+
+.footer {
+  background: #000000;
+}
+
+.footer .columns {
+  padding-bottom: 0;
+}
+
+.footer .wrapper-inner {
+  padding: 20px;
+}
+
+.footer .container {
+  background: transparent;
+}
