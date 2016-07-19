@@ -5,22 +5,22 @@ import classnames from 'classnames'
 
 export class Col extends InkComponent {
   renderInk() {
-    let colClass = classnames(this.props.width, "columns")
+    let colClass = classnames(this.props.class, "columns")
     let colContentClass = classnames({
       'center': this.props.center,
       'panel': this.props.panel
     })
     return (
-      <table className={colClass}>
-        <tbody>
+      <th className={colClass}>
+        <table>
           <tr>
-            <td className={colContentClass}>
+            <th className={colContentClass}>
               {this.renderChildren()}
-            </td>
-            <td className="expander"></td>
+            </th>
+            <th className="expander"></th>
           </tr>
-        </tbody>
-      </table>
+        </table>
+      </th>
     );
   }
 }

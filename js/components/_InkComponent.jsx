@@ -25,7 +25,7 @@ export class InkComponent extends React.Component {
     return result
   }
 
-  /* Do not override this method. Use `renderCenter` instead */
+  /* Do not override this method. Use `renderInk` instead */
   render() {
     return this.renderInk()
   }
